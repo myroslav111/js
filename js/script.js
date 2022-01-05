@@ -37,3 +37,15 @@ console.log(x - y);
 console.log(x * y);
 console.log(y / x);
 console.log(y % x);
+
+
+const aNumber = '5px';
+console.log(Number(aNumber));
+console.log(Number.parseInt(aNumber));
+let frog = '13.22vrl';
+console.log(Number.parseFloat(frog));
+frog = Number('51');
+console.log(Number.isNaN(frog));
+frog = Number('jnlkml');
+console.log(Number.isNaN(frog));
+console.log(0.1 + 0.2);
