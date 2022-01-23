@@ -49,3 +49,33 @@ console.log(Number.isNaN(frog));
 frog = Number('jnlkml');
 console.log(Number.isNaN(frog));
 console.log(0.1 + 0.2);
+
+
+console.log(0.32 + 0.54);
+console.log((0.75 + 0.15).toFixed(4));
+console.log(Math.floor(1.7));
+console.log(Math.ceil(4.4));
+console.log(Math.max(20, 30, 40, 50, 120, 40,));
+console.log(Math.min(10, 35, 5, 44));
+console.log(Math.pow(3, 3));
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random() * (10 - 1) + 1);
+
+
+let ses = 'happy new yars';
+console.log(ses.length);
+
+console.log(ses.toLocaleLowerCase());
+console.log(ses.toLocaleUpperCase());
+console.log(ses.indexOf('new'));
+console.log(ses.indexOf('r'));
+console.log(ses.indexOf('y'));
+console.log(ses.endsWith('rs'));
+console.log(ses.endsWith('ew'));
+
+
+const ageMine = 36;
+console.log(ageMine);
+console.log(ageMine > 33 && ageMine < 40);
+console.log(ageMine > 32 && ageMine > 40);
