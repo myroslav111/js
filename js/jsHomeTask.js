@@ -1168,8 +1168,8 @@
 //   // Change code below this line
 // function add(...restArgs) {
 // let totalArgs = 0;
-//     console.log(restArgs);
-//     console.log(totalArgs);
+//     // console.log(restArgs);
+//     // console.log(totalArgs);
 // for(const element of restArgs){
 //     // console.log(element);
 //     totalArgs += element;
@@ -1178,4 +1178,256 @@
 // }
 // console.log(totalArgs);
 //   }
-//   add(32, 6, 13, 19, 8);
+//   add(10, 12, 4, 11, 48, 10, 8);
+//   add(20, 74, 11, 62, 46, 12);
+//   add(50, 15, 27);
+
+
+
+// // Change code below this line
+// function addOverNum(arg1, ...args) {
+//     let total = 0;
+// //    console.log(arg1);
+//     for (const arg of args) {
+//         // console.log(arg);
+//         if(arg1 < arg){
+           
+//             total += arg;
+//         }
+      
+//     }
+//   console.log(total);
+//     // return total;
+//     // Change code above this line
+//   }
+//   addOverNum(10, 12, 4, 11, 48, 10, 8);
+
+// function findMatches(array, ...arg) {
+//     // console.log(array);
+//     // console.log(arg);
+//     const matches = []; // Don't change this line
+//   for(const element of array){
+//       console.log(element);
+//       if (arg.includes(element)){
+//           matches.push(element);
+          
+//       }
+      
+      
+//   }console.log(matches);
+//     // Change code above this line
+//     return matches;
+//   }
+// //   findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7);  
+//   findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2, 15, 7)
+
+// const bookShelf = {
+//     // Change code below this line
+//     books: ["The last kingdom", "The guardian of dreams"],
+//     getBooks() {
+//       return "Returning all books";
+//     },
+//     addBook(bookName) {
+//       return `Adding book ${bookName}`;
+//     },
+//     removeBook(bookName){
+//         return `Deleting book ${bookName}`
+//     },
+//     updateBook(oldName, newName){
+//         return `Updating book ${oldName} to ${newName}`
+//     },
+//     // Change code above this line
+//   };
+
+//   bookShelf.addBook("Haze");
+// console.log(bookShelf);  
+
+// const bookShelf = {
+//     books: ["The Last Kingdom"],
+//     getBooks() {
+//       return this.books;
+//     },
+//     addBook(bookName) {
+//       this.books.push(bookName);
+//     },
+//     removeBook(bookName) {
+//       const bookIndex = this.books.indexOf(bookName);
+//       this.books.splice(bookIndex, 1);
+//     },
+//   };
+
+// console.log(bookShelf.getBooks()); // []
+// bookShelf.addBook("Haze");
+// bookShelf.addBook("The Guardian of Dreams");
+// console.log(bookShelf.getBooks()); // ["The Last Kingdom", "Haze", "The Guardian of Dreams"]
+// bookShelf.removeBook("Haze");
+// console.log(bookShelf.getBooks());
+
+// const bookShelf = {
+//     books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//     updateBook(oldName, newName) {
+//      const indexDellBook = this.books.indexOf(oldName);
+//      this.books.splice(indexDellBook, 1, newName);
+  
+      
+//     },
+//   };
+//   bookShelf.updateBook("Haze", "Dungeon chronicles");
+//   console.log(bookShelf);
+
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//     // Change code below this line
+//   getPotions(){
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     return this.potions.push(potionName);
+//   },
+//   removePotion(potionName) {
+//    const q = this.potions.indexOf(potionName);
+//    this.potions.splice(q, 1);
+//   },
+//   updatePotionName(oldName, newName) {
+//     const w = this.potions.indexOf(oldName);
+//     this.potions.splice(w, 1, newName);
+// },
+//   };
+//   atTheOldToad.updatePotionName("Dragon breath", "Polymorth") ;
+// //   atTheOldToad.removePotion("Dragon breath")
+// //   atTheOldToad.addPotion("Invisibility");
+//   console.log(atTheOldToad);
+
+
+// const atTheOldToad = {
+//     potions: [
+//       { name: "Speed potion", price: 460 },
+//       { name: "Dragon breath", price: 780 },
+//       { name: "Stone skin", price: 520 },
+//     ],
+//     getPotions() {
+//       return this.potions;
+//     },
+//     addPotion(newPotion) {
+    
+//       for(const obj of this.potions){
+//         console.log(obj.name);
+//         console.log(newPotion.name);
+//        if (obj.name === newPotion.name) {
+//         console.log('ok');
+//         return console.log(`Error! Potion ${newPotion.name} is already in your inventory!`);       
+//       }
+//       }
+//         console.log('fols');
+//       this.potions.push(newPotion);
+//     },
+
+//     removePotion(potionName) {
+//       for(let i = 0; i < this.potions.length; i += 1){
+//         console.log(this.potions[i].name);
+
+//         if(this.potions[i].name === potionName){
+//           console.log('found');
+//           console.log(this.potions[i]);
+
+//           const potionIndex = this.potions.indexOf(this.potions[i]);
+//           console.log(potionIndex);
+//           return console.log(this.potions.splice(potionIndex, 1));
+//         }
+//       }
+//     return console.log(`Potion ${potionName} is not in inventory!`);
+//     },
+
+//     updatePotionName(oldName, newName) {
+//       // console.log(newName);
+//       for(let i = 0; i < this.potions.length; i += 1){
+//         // console.log(this.potions[i].name);
+
+//         if(this.potions[i].name === oldName){
+//           console.log('found');
+//           console.log(this.potions[i].name);
+//           this.potions[i].name = newName;
+//            return this.potions;   
+//         }
+//       }
+//     },
+//   };
+  // atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
+  // atTheOldToad.addPotion({ name: "Power potion", price: 270 });
+  // atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
+//   atTheOldToad.addPotion({ name: "Power potion", price: 270 });
+// atTheOldToad.addPotion({ name: "Stone skin", price: 240 });
+// atTheOldToad.removePotion("Dragon breath");
+// atTheOldToad.removePotion("Speed potion")
+  // console.log(atTheOldToad.potions.includes({ name: "Dragon breath", price: 700 }));
+  // atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion")
+  // atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
+// console.log(atTheOldToad.potions);
+
+
+  // const a = {s:'q'};
+  // const z = {s:'q'};
+  // const b = a;
+  // b.c = 'a';
+  // console.log(b);
+  // a.s = 'w';
+  // console.log(b === a);
+  // console.log(b);
+//   // console.log(a.s.includes(b.s)); 
+// const q = { name: "Power potion", price: 270 };
+// // console.log(q.name.indexOf("Power potion"));
+// console.log(Object.values(q).indexOf("Power potion")); 
+// // let r = ;
+// console.log(Object.values(q).splice(0, 1, "Dragon breath"));
+// // console.log(Object.values(q));
+// // q.name = "Dragon breath";
+// console.log(q);
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   const arrayFn = {
+//     completed: false, category: 'General', priority: 'Normal',...data,
+// }
+// console.log(arrayFn);
+// return arrayFn;
+//   // Change code above this line
+// }  
+// // console.log(data);
+// makeTask({ priority: "Low", text: "Choose shampoo" });
+
+// makePizza = () =>  "Your pizza is being prepared, please wait.";
+
+// const result = makePizza();
+// const pointer = makePizza;
+// console.log(pointer);
+// console.log(result);
+
+// function makePizza() {
+//   return "Your pizza is being prepared, please wait.";
+// }
+// // Change code below this line
+
+// const result = makePizza();
+// const pointer = makePizza;
+// console.log(pointer);
+
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+// function makeMessage(pizzaName, callback) {
+//   return console.log(callback(pizzaName)); 
+  
+// }
+// // makeMessage("Royal Grand", makePizza)
+// makeMessage("Ultracheese", deliverPizza);
+// // console.log(makeMessage);
+
