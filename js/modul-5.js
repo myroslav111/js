@@ -165,3 +165,118 @@
 // storage.removeItem("Prolonger");
 // console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 //  console.log(["Nanitoids", "Prolonger", "Antigravitator"].indexOf("Prolonger").splace);
+
+
+// class StringBuilder {
+//     constructor (value){
+//     this._value = value;
+//     }
+//     getValue(){
+//         return this._value
+//     }
+//     padEnd(str){
+         
+//          return this._value = this._value + str
+//     }
+//     padStart(str){
+        
+//         return this._value =   str + this._value
+//     }
+//     padBoth(str){
+//         return this._value = str + this._value + str
+        
+//     }
+// }
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+// // console.log('.' + '^.');
+// builder.getValue()
+// console.log();
+
+// class Car {
+//     // Change code below this line
+//     static MAX_PRICE = 50000
+//     #price;
+  
+//     constructor({ price }) {
+//       this.#price = price;
+//     }
+  
+//     get price() {
+//       return this.#price;
+//     }
+  
+//     set price(newPrice) {
+//       this.#price = Car.MAX_PRICE > newPrice ? newPrice : this.#price;
+  
+//     }
+//     // Change code above this line
+//   }
+  
+//   const audi = new Car({ price: 35000 });
+//   console.log(audi.price); // 35000
+  
+//   audi.price = 49000;
+//   console.log(audi.price); // 49000
+  
+//   audi.price = 51000;
+//   console.log(audi.price); // 49000
+//   console.log(audi.MAX_PRICE);
+
+// class User {
+//     static #takenEmails = [];
+  
+//     static isEmailTaken(email) {
+//       return User.#takenEmails.includes(email);
+//     }
+  
+//     #email;
+  
+//     constructor({ email }) {
+//       this.#email = email;
+//       User.#takenEmails.push(email);
+//     }
+//   }
+  
+//   const mango = new User({ email: "mango@mail.com" });
+  
+//   console.log(User.isEmailTaken("poly@mail.com"));
+//   console.log(User.isEmailTaken("mango@mail.com"));
+
+// function spinalCase(str) {
+  
+//     return str.split(/\s|_|(?=[A-Z])/).join('-');
+//   }
+//   console.log(spinalCase('This Is Spinal Tap'));
+//   console.log(spinalCase("The_Andy_Griffith_Show"));
+//   console.log(spinalCase("thisIsSpinalTap"));
+//   console.log(spinalCase("Teletubbies say Eh-oh"));
+// function translatePigLatin(str) {
+//     return str.replace(/^[aeiou]\w*/, "$&way").replace(/(^[^aeiou]+)(\w*)/, "$2$1ay");
+//   }
+//   console.log(translatePigLatin("consonant"));
+
+// function myReplace(str, before, after) {
+//   console.log(before[0] === before[0].toUpperCase());
+// if(before[0] === before[0].toUpperCase()){
+  
+//   after = after[0].toUpperCase() + after.slice(1)
+// }
+// if(before[0] === before[0].toLowerCase()){
+//   after = after[0].toLowerCase() + after.slice(1)
+// }
+// // console.log(arrStr);
+//     return str.replace(before, after);
+//   }
+  
+
+//   console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+// console.log(myReplace("Let us get back to more Coding", "Coding", "algorithms"));  
+// console.log(myReplace("I think we should look up there", "up", "Down"));
