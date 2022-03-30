@@ -522,3 +522,132 @@
     //   }
       
     //   console.log(addFriend(user, 'Pete'));
+
+
+    // function fearNotLetter(str) {
+    //   let currCharCode = str.charCodeAt(0);
+    //   let missing = undefined;
+    
+    //   str
+    //     .split("")
+    //     .forEach(letter => {
+    //       if (letter.charCodeAt(0) === currCharCode) {
+    //         currCharCode++;
+    //       } else {
+    //         missing = String.fromCharCode(currCharCode);
+    //       }
+    //     });
+    
+    //   return missing;
+    // }
+    
+    // test here
+    // console.log(fearNotLetter("abce"));
+    // console.log("abce".charCodeAt(3));
+    
+    // const a = "abce".split('').forEach(letter => letter.charCodeAt(0));
+    // console.log(a);
+
+          
+    // function fearNotLetter(str) {
+    // let someLeter = undefined
+    // let missingLetter = str.charCodeAt(0)
+
+    // str.split('').forEach(leter => {
+    //   if(leter.charCodeAt(0) === missingLetter){
+    //     missingLetter += 1
+    //   }else{
+    //     someLeter = String.fromCharCode(missingLetter)
+    //   }
+        
+      
+    // })
+    
+    //   return someLeter;
+    // }
+    
+    // // test here
+    // console.log(fearNotLetter("abce"));
+    // console.log(String.fromCharCode(97));
+
+    // function fearNotLetter(str) {
+    //     for(let i = 1; i < str.length; i += 1){
+        
+    //    if(str.charCodeAt(i) - str.charCodeAt(i - 1) > 1){
+    //         return String.fromCharCode(str.charCodeAt(i - 1) + 1)
+    //    }
+    //     }
+    // }
+
+    // console.log(fearNotLetter("abce"));
+
+    //  console.log('abce'.charCodeAt(2));
+
+    // function uniteUnique(...arr) {
+    //   const test = arr.flatMap(num => num).filter((num, index, array) => array.indexOf(num) === index)
+    //   console.log(test);
+
+
+    //   return test;
+    // }
+    
+    // uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+
+  
+
+  //   function convertHTML(str) {
+  // const htmlEntities = {
+  //     "&": "&amp;",
+  //     "<": "&lt;",
+  //     ">": "&gt;",
+  //     '"': "&quot;",
+  //     "'": "&apos;"
+  //   };
+   
+  //     // const objKeys = Object.keys(htmlEntities)
+  //     // let needLetter = objKeys.filter(el => str.indexOf(el) >= 0).join('')
+  //     // console.log(needLetter);
+    
+  //     // console.log(htmlEntities[needLetter]);
+  //     // return str.replace(needLetter, htmlEntities[needLetter]);
+
+  //     // const objKeys = Object.keys(htmlEntities)
+  //     // let needLetter = objKeys.filter(el => str.indexOf(el) >= 0)
+  //     // console.log(needLetter);
+    
+  //     // console.log(htmlEntities[needLetter]);
+  //     // return str.replace(needLetter, htmlEntities[needLetter]);
+  //      console.log(str.split('').map(el => htmlEntities[el] || el));
+  //     return str.split('').map(el => htmlEntities[el] || el).join('')
+  //   }
+    
+  //   // console.log(convertHTML("Dolce & Gabbana"));
+  //   console.log(convertHTML("Schindler's List"));
+  //   console.log(convertHTML("<>"));
+    
+
+  // function sumFibs(num) {
+  // if( num <= 0) return 0;
+
+  // const arrFib = [1, 1]
+  // let nextFib = 0;
+
+  // while((nextFib = arrFib[0] + arrFib[1]) <= num){
+  //   console.log(nextFib);
+    
+  //   console.log(arrFib.unshift(nextFib));
+  //   console.log(arrFib);
+  // }
+  // num = arrFib.filter(el => el % 2 !== 0 )
+  
+  //   return num;
+  // }
+  // console.log(sumFibs(4));
+
+
+
+
+  
+  
+
+    
