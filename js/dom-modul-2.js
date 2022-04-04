@@ -143,38 +143,38 @@
 //////////////////////////////////////////////////
 
 
-// const refs = {
-//     input: document.querySelector('.js-input'),
-//     nameLabel: document.querySelector('.js-button > span'),
-//     licenseCheckBox: document.querySelector('.js-license'),
-//     btn: document.querySelector('.js-button'),
+const refs = {
+    input: document.querySelector('.js-input'),
+    nameLabel: document.querySelector('.js-button > span'),
+    licenseCheckBox: document.querySelector('.js-license'),
+    btn: document.querySelector('.js-button'),
 
-// }
-// // console.log(refs.licenseCheckBox);
+}
+// console.log(refs.licenseCheckBox);
 
-// refs.input.addEventListener('input', onInputChange)
-// refs.licenseCheckBox.addEventListener('change', onLicenseChange)
+refs.input.addEventListener('input', onInputChange)
+refs.licenseCheckBox.addEventListener('change', onLicenseChange)
 
-// function onInputFocus() {
-//     console.log('input poluchil focus - sobutie focus');
-// }
+function onInputFocus() {
+    console.log('input poluchil focus - sobutie focus');
+}
 
-// function onInputBlur() {
-//     console.log('input poteral focus - sobutie blur');
-// }
+function onInputBlur() {
+    console.log('input poteral focus - sobutie blur');
+}
 
-// function onInputChange(event) {
-//     // console.log(event.currentTarget.value);
-//     refs.nameLabel.textContent = event.currentTarget.value
-// }
+function onInputChange(event) {
+    // console.log(event.currentTarget.value);
+    refs.nameLabel.textContent = event.currentTarget.value
+}
 
-// function onLicenseChange(event){
-// // console.log(event.currentTarget.checked);
-// // console.log('refs.btn.disabled', refs.btn.disabled);
+function onLicenseChange(event){
+// console.log(event.currentTarget.checked);
+// console.log('refs.btn.disabled', refs.btn.disabled);
 
-// refs.btn.disabled = !event.currentTarget.checked
+refs.btn.disabled = !event.currentTarget.checked
 
-// }
+}
 
 
 ///////////////////////////////////////////////////////
@@ -211,38 +211,38 @@
 
 ////////////////////////////////////////////////
 
-const refs = {
-    openModalBtn: document.querySelector('[data-action="open-modal"]'),
-    closeModalBtn: document.querySelector('[data-action="close-modal"]'),
-    backdrop: document.querySelector('.js-backdrop')
-}
+// const refs = {
+//     openModalBtn: document.querySelector('[data-action="open-modal"]'),
+//     closeModalBtn: document.querySelector('[data-action="close-modal"]'),
+//     backdrop: document.querySelector('.js-backdrop')
+// }
 
-console.log(refs);
-refs.openModalBtn.addEventListener('click', onOpenModal)
-refs.closeModalBtn.addEventListener('click', onCloseModal)
-refs.backdrop.addEventListener('click', onBackdropClick)
+// console.log(refs);
+// refs.openModalBtn.addEventListener('click', onOpenModal)
+// refs.closeModalBtn.addEventListener('click', onCloseModal)
+// refs.backdrop.addEventListener('click', onBackdropClick)
 
-function onOpenModal() {
-    window.addEventListener('keydown', onEscKeyPress)
-    document.body.classList.add('show-modal')
-}
+// function onOpenModal() {
+//     window.addEventListener('keydown', onEscKeyPress)
+//     document.body.classList.add('show-modal')
+// }
 
-function onCloseModal () {
-    window.removeEventListener('keydown', onEscKeyPress)
-document.body.classList.remove('show-modal')
-}
+// function onCloseModal () {
+//     window.removeEventListener('keydown', onEscKeyPress)
+// document.body.classList.remove('show-modal')
+// }
 
-function onBackdropClick (event) {
+// function onBackdropClick (event) {
     
-    if(event.currentTarget === event.target){
-        onCloseModal()
-    }
-}
+//     if(event.currentTarget === event.target){
+//         onCloseModal()
+//     }
+// }
 
-function onEscKeyPress (event) {
-const ESC_KEY_CODE = 'Escape'
+// function onEscKeyPress (event) {
+// const ESC_KEY_CODE = 'Escape'
 
-    if(event.code === ESC_KEY_CODE){
-        onCloseModal()
-    }
-}
+//     if(event.code === ESC_KEY_CODE){
+//         onCloseModal()
+//     }
+// }
