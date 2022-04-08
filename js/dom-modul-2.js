@@ -143,38 +143,38 @@
 //////////////////////////////////////////////////
 
 
-const refs = {
-    input: document.querySelector('.js-input'),
-    nameLabel: document.querySelector('.js-button > span'),
-    licenseCheckBox: document.querySelector('.js-license'),
-    btn: document.querySelector('.js-button'),
+// const refs = {
+//     input: document.querySelector('.js-input'),
+//     nameLabel: document.querySelector('.js-button > span'),
+//     licenseCheckBox: document.querySelector('.js-license'),
+//     btn: document.querySelector('.js-button'),
 
-}
-// console.log(refs.licenseCheckBox);
+// }
+// // console.log(refs.licenseCheckBox);
 
-refs.input.addEventListener('input', onInputChange)
-refs.licenseCheckBox.addEventListener('change', onLicenseChange)
+// refs.input.addEventListener('input', onInputChange)
+// refs.licenseCheckBox.addEventListener('change', onLicenseChange)
 
-function onInputFocus() {
-    console.log('input poluchil focus - sobutie focus');
-}
+// function onInputFocus() {
+//     console.log('input poluchil focus - sobutie focus');
+// }
 
-function onInputBlur() {
-    console.log('input poteral focus - sobutie blur');
-}
+// function onInputBlur() {
+//     console.log('input poteral focus - sobutie blur');
+// }
 
-function onInputChange(event) {
-    // console.log(event.currentTarget.value);
-    refs.nameLabel.textContent = event.currentTarget.value
-}
+// function onInputChange(event) {
+//     // console.log(event.currentTarget.value);
+//     refs.nameLabel.textContent = event.currentTarget.value
+// }
 
-function onLicenseChange(event){
-// console.log(event.currentTarget.checked);
-// console.log('refs.btn.disabled', refs.btn.disabled);
+// function onLicenseChange(event){
+// // console.log(event.currentTarget.checked);
+// // console.log('refs.btn.disabled', refs.btn.disabled);
 
-refs.btn.disabled = !event.currentTarget.checked
+// refs.btn.disabled = !event.currentTarget.checked
 
-}
+// }
 
 
 ///////////////////////////////////////////////////////
@@ -246,3 +246,69 @@ refs.btn.disabled = !event.currentTarget.checked
 //         onCloseModal()
 //     }
 // }
+
+/////////////////////////////////////////////////
+
+// const object = {
+//     obj1: {
+//         a: 1,
+//         b: 11,
+//         c: 111,
+//         obj2: {
+//             a: 2,
+//             b: 22,
+//             c: 222,
+//             obj3: {
+//                 a: 3,
+//                 b: 33,
+//                 c: 333,
+//                 obj4: {
+//                     a: 4,
+//                     b: 44,
+//                     c: 444,
+//                     obj5: {
+//                         a: 5,
+//                         b: 55,
+//                         c: 555,
+//                     }
+//                 }
+//             }
+//         }
+//     },
+//     obj6: {
+//         a: 6,
+//         b: 66,
+//         c: 666,
+//         obj7: {
+//             a: 7,
+//             b: 77,
+//             c: 777,
+//             obj8: {
+//                 a: 8,
+//                 b: 88,
+//                 c: 888,
+//             }
+//         }
+//     },
+//     obj9 :{
+//         a: 9,
+//         b: 9,
+//         c: 9,
+//     }    
+// }
+
+// function qqqqqqq(obj) {
+//     if( obj.b !== undefined){
+//         for(let key in obj.b){
+//             console.log(key);
+//             qqqqqqq(obj.b[key])
+//         }
+//     }
+// }
+
+// for ( let key in object) {
+//     qqqqqqq(object[key])
+// }
+// console.log('fffffff');
+
+// qqqqqqq(object)
