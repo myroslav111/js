@@ -7,7 +7,28 @@ body.show-modal .backdrop{
 body.show-modal .modal{
     transform: scale(1);
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    outline: 2px solid tomato;
+}
+li{
+    list-style: none;
+}
+.tags__item{
+    margin: 4px;
+}
+.tags__btn--activ{
+    background-color: chocolate;
+}
 
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid tomato;
+}
 .backdrop {
     display: flex;
     justify-content: center;
