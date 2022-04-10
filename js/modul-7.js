@@ -77,3 +77,39 @@
 //     console.log(selectedTags);
     
 // }
+
+
+// function multiple(a, b){
+//     console.log(a, b);
+//     return a * b
+
+// }
+
+// function partial(fn, ...fixed){
+// console.log(fixed);
+//     return function(...args){
+//         console.log();
+//         console.log(args);
+//         console.log(fixed.concat(args)); 
+//         return fn.apply(this, fixed.concat(args))
+//     }
+// }
+// const double = partial(multiple, 2)
+// // console.log(double);
+//  console.log(double(21));
+
+
+// function divade(a, b){
+//     return  a / b
+// }
+// // console.log(divade(6, 2));
+
+// function highest (fn, ...rest){
+//     return function (...args){
+//         console.log(args);
+//     return fn.apply(this, args.concat(rest));
+//     }
+// }
+
+// const split = highest(divade, 2)
+// console.log(split(6));
